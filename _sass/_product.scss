@@ -1,0 +1,28 @@
+.product-container a {
+    text-decoration-line: none;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* 표시할 줄 수 */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 15px; /* 원하는 폰트 크기 */
+	line-height: 23px; /*상품 글의 줄간격 조정 */	
+}
+
+.col-6 {
+    margin-bottom: 50px; /* 아래쪽 마진으로 줄 간격 설정 */
+
+}
+
+.product-link {
+    text-decoration: none;
+}
+.product-link:hover {
+    text-decoration: none;
+}
+
+
+.product-list {
+    display: flex;
+	flex-wrap: wrap; /* 추가 */
+}

@@ -1,0 +1,59 @@
+---
+---
+@import '{{ site.theme }}';
+@import "product";
+@media screen and (max-width: 768px) {
+    .product-container {
+        width: 100%;
+        font-size:13px;
+		padding-right: 10px;
+		margin: 10px; /* 상품 컨테이너 내부에서 마진 설정 */
+    }
+    
+    .product-container a { /* 상품 제목 선택자 */
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 표시할 줄 수 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px; /* 원하는 폰트 크기 */
+    }
+
+    .product-image-container {
+        /* Adjust these values as needed */
+        width: 100%;
+        padding-top: 5px; /* 이미지와 제목 사이의 간격을 위한 패딩 추가 */
+    }
+}
+
+h1 {
+    font-size: 1.8em; /* 기본 글꼴 크기 */
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* 중간 화면에서의 글꼴 크기 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.3em; /* 작은 화면에서의 글꼴 크기 */
+    }
+}
+
+h5 {
+    font-size: 1em; /* 기본 글꼴 크기 */
+}
+
+@media screen and (max-width: 768px) {
+    h5 {
+        font-size: 0.9em; /* 중간 화면에서의 글꼴 크기 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h5 {
+        font-size: 0.9em; /* 작은 화면에서의 글꼴 크기 */
+    }
+}
